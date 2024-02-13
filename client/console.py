@@ -53,9 +53,9 @@ class ConsoleApp:
         if record == "":
             print("\n{:#^30}".format("#"), "{:#^30}".format(" Запись не найдена! "), "{:#^30}".format("#"))
         else:
-            print("\n{:#^50}".format(" Информация о пользователе "), record.get("p_id"), record.get("first_name"),
-                  record.get("last_name"), record.get("surname"), record.get("org_name"), record.get("work_phone"),
-                  record.get("personal_phone"), "{:#^50}".format(""), sep="\n")
+            print("\n{:#^50}".format(" Информация о пользователе "), " ID: " + record.get("p_id"), "Имя: " + record.get("first_name"),
+                  "Фамилия: " + record.get("last_name"), "Отчество: " + record.get("surname"), "Наименование организации: " + record.get("org_name"),
+                  "Рабочий номер телефона: " + record.get("work_phone"), "Личный номер телефона: " + record.get("personal_phone"), "{:#^50}".format(""), sep="\n")
 
         print("\nВернуться назад - 1", "Обновить информацию о человеке - 2", "Удалить информацию о человеке - 3", sep="\n")
 
